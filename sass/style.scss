@@ -191,9 +191,10 @@ body{
     transition: 0.2s linear !important;
 }
 
+
 .header{
     position: fixed;
-    top: 0; 
+    top: 0; left: -35rem;
     height: 100vh;
     padding: 3rem 2rem;
     width: 35rem;
@@ -205,6 +206,7 @@ body{
     align-items: center;
     justify-content: space-between;
     flex-flow: column;
+    transition: .2s linear !important;
     .logo{
         text-transform: uppercase;
         border-bottom: var(--border-bold);
@@ -219,6 +221,109 @@ body{
         font-size: 2.5rem;
         padding: 1.5rem;
         margin: 0.5rem;
+        transition: .2s linear !important;
+        &.active,
+        &:hover{
+            background-color: var(--color-yellow);
+        }
+    }
+    .follow a{
+        font-size: 2.5rem;
+        transition: .2s linear !important;
+        margin: 0 1.5rem;
+        cursor: pointer;
+        &:hover{
+            transform: rotate(360deg);
+        }
+    }
+    #menu-btn{
+        position: absolute;
+        top: 0; right: -5.5rem;
+        line-height: 4.5rem;
+        width: 5rem;
+        font-size: 3rem;
+        height: 5rem;
+        padding: .2rem .2rem;
+        background-color: var(--color-black);
+        color: var(--color-white) !important;
+        cursor: pointer;
+    }
+    &.active{
+        left: 0;
+    }
+}
+
+section{
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 4rem 4rem;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    min-height: 100vh;
+
+    .image{
+        flex: 1 1 40rem;
+
+        img{
+            border: 5px solid black;
+            padding: 2rem;
+            border-radius: 2rem;
+        }
     }
 
+    .content{
+        flex: 1 1 40rem;
+        h3{
+            font-weight: bolder;
+            font-size: 4rem;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+        }
+        span{
+            display:block;
+            background-color: var(--color-yellow);
+            font-size: 3rem;
+            padding: 1rem 0;
+            margin-bottom: 3rem 0;
+        }
+        p{
+            margin-top: 2rem;
+            font-size: 1.7rem;
+            line-height: 1.5;
+            padding: 1rem 0;
+            margin-bottom: 3rem;
+        }
+        .btn{
+            display: inline-block;
+            padding: 1.5rem 2rem;
+            border: 1px solid black;
+            font-size: 2rem;
+            transition: .2s linear !important;
+            cursor: pointer;
+        }
+        .btn:hover{
+            color: var(--color-white);
+            background-color: var(--color-black);
+        }
+    }
+}
+
+
+.btn{
+    display: inline-block;
+    padding: 1.5rem 2rem;
+    border: 1px solid black;
+    font-size: 2rem;
+    transition: .2s linear !important;
+    cursor: pointer;
+}
+.btn:hover{
+    color: var(--color-white);
+    background-color: var(--color-black);
 }

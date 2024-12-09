@@ -19,7 +19,7 @@
             </div>
             <a href="#home" class="logo active">Portfolio</a>
             <nav class="navbar" id="navbar">
-                <a href="#home">home</a>
+                <a href="#home" class="active">home</a>
                 <a href="#about">about</a>
                 <a href="#services">services</a>
                 <a href="#portfolio">portfolio</a>
@@ -32,8 +32,28 @@
                 <a href="#" class="fab fa-youtube"></a>
             </div>
         </header>
+        <section class="home" id="home">
+            <div class="image" data-aos="fade-up">
+                <img src="./Assets/images/black-woman.avif" alt="black women"/>
+            </div>
+            <div class="content" data-aos="zoom-in">
+                <h3>hi, i am abradu frimpong</h3>
+                <span>web developer and designer</span>
+                <p>I specialize in creating beautiful, functional, and responsive websites. 
+                With a passion for innovation and a knack for problem-solving, I bring your 
+                digital ideas to life with modern design and cutting-edge technologies.
+                </p>
+                <a href="#" class="btn">about me</a>
+            </div>
+        </section>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="./js/script.js"></script>
+        <script>
+            AOS.init({
+                duration: 1500,
+                delay: 400,
+            })
+        </script>
     </body>
 </html>
